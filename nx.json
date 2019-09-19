@@ -1,0 +1,30 @@
+{
+  "npmScope": "nx-dep-boundaries-example",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "booking-e2e": {
+      "tags": ["type:e2e"]
+    },
+    "booking": {
+      "tags": ["type:app", "scope:booking", "platform:client"]
+    },
+    "api": {
+      "tags": ["type:app", "scope:booking", "platform:server"]
+    },
+    "api-interfaces": {
+      "tags": ["type:interfaces"]
+    },
+    "shared-ui-util": {
+      "tags": ["type:util", "platform:client"]
+    },
+    "booking-data-access": {
+      "tags": ["type:data-access", "platform:server", "scope:booking"]
+    }
+  }
+}

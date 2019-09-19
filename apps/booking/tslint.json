@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "nxDepBoundariesExample",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "nx-dep-boundaries-example",
+      "kebab-case"
+    ]
+  }
+}
